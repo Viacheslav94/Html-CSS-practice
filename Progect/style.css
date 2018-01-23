@@ -1,0 +1,19 @@
+.section-title {
+    color: blue;
+}
+
+.left-col {
+    float: left;
+    width: 30%;
+}
+
+.right-col {
+    float: left;
+    /*С какой стороны будет инфа*/
+    width: 30%;
+    /*Сколько занимает инфа в %(маштабируется само)*/
+}
+
+footer {
+    clear: both;
+}

@@ -1,0 +1,50 @@
+/*Оформление к Химия CSS*/
+
+body {
+    color: red font: normal 1em Arial, Tahoma, sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.desc {
+    font-size: 1.6rem;
+    text-transform: lowercase;
+    color: rgb(0, 4, 255);
+}
+
+[title|="list"] {
+    color: red;
+}
+
+.test b {
+    color: red;
+}
+
+.test2>b {
+    color: red;
+}
+
+.test3 b+i {
+    color: red;
+}
+
+.test4 b~i {
+    color: red;
+}
+
+.test5 b,
+.test5 i {
+    color: green;
+}
+
+
+/* Синтасис
+
+Селектор {
+    свойство:"значение";
+    свойство2: значение значение2 значение3 ...;
+}
+
+*/

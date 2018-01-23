@@ -1,0 +1,174 @@
+<!doctype html>
+<!--Самое правильное оформление сайта-->
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Мое портфолио</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body bgcolor="#cfcfcf">
+    <header>
+        <h1 align="center">Мой сайт портфолио</h1>
+        <address>
+        <div>Город: Киев</div>
+        <div>Телефон: 063 755 18 47</div>
+    </address>
+    </header>
+    <hr color="red">
+
+    <main>
+        <div class="left-col">
+            <aside>
+                <form action="Указать сервер.php" method="post">
+                    <input type="text" name="name" id="name" placeholder="Введите имя">
+                    <input type="password" name="pswrd" id="pswrd" placeholder="Введите пароль">
+                    <input type="submit" id="submit" value="Войти">
+                    <input type="reset" value="Очистить">
+                </form>
+                <div>
+                    <h2 class="section-title">Мои контакты</h2>
+
+                    <div>
+                        <h3>Я в соц. сетях</h3>
+                        <ul>
+                            <li><a href="https://vk.com/jlyhatik" target="_blank" title="Перейти на мою страничку в ВК">Я в ВК</a></li>
+                            <li><a href="#">Я в FB</a></li>
+                            <li><a href="#">Я в TW</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>.....</div>
+                <div>.....</div>
+                <div>.....</div>
+            </aside>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#">Портфолио</a>
+                    </li>
+                    <li>
+                        <a href="#">Блог</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right-col">
+            <section>
+                <h2 class="section-title">Обо мне</h2>
+                <div>
+                    <figure>
+                        <!--figure это групирование-->
+                        <img id="my-ava" src="https://www.cats.org.uk/uploads/images/featurebox_sidebar_kids/grief-and-loss.jpg" width="200" height="200" alt="Мой аватар" title="Кривовяз Вячеслав" border="2">
+                        <figcaption>
+                            <!--figcaption это подпись к фото-->
+                            Мое фото
+                        </figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <h3>Моя биография</h3>
+                    <article>
+                        <p>Биография — описание жизни человека, сделанное другими людьми или им самим (автобиография). Биография является источником первичной социологической информации, позволяющей определить психологический тип личности в его исторической,
+                            национальной и социальной обусловленности. Биография воссоздаёт историю человека в связи с общественной действительностью, культурой и бытом его эпохи. Биография может быть научной, художественной, популярной и т. д.</p>
+                        <p>Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так счастлив, мой друг, так упоен ощущением
+                            покоя, что искусство мое страдает от этого. Ни одного штриха не мог бы я сделать, а никогда не был таким большим художником, как в эти минуты. Когда от милой моей долины поднимается пар и полдневное солнце стоит над непроницаемой
+                            чащей темного леса и лишь редкий луч проскальзывает в его святая святых, а я лежу в высокой траве у быстрого ручья и, прильнув</p>
+                    </article>
+                </div>
+            </section>
+            <section>
+                <h2 class="section-title">Моя таблица</h2>
+                <table border="1" cellpadding="10" cellspacing="1">
+                    <tr bgcolor="#cacaca">
+                        <th>Вид проекта</th>
+                        <th>Сделано</th>
+                        <th>выкуплено</th>
+                    </tr>
+                    <tr>
+                        <td>Статичных</td>
+                        <td data-max="100">86</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>Адаптивных</td>
+                        <td>40</td>
+                        <td>30</td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <h2 class="section-title">Заказать у меня сайт</h2>
+                <form action="order.php" method="post">
+                    <div>
+                        <label for="client_name">Имя клиента</label>
+                        <input type="text" id="client_name" name="client_name" placeholder="Введите имя">
+                    </div>
+                    <div>
+                        <label for="email">Email клиента</label>
+                        <input type="text" id="email" name="email" placeholder="Введите email">
+                    </div>
+                    <div>
+                        <label for="pol">Ваш пол</label>
+                        <input type="radio" id="pol" name="gendre" value="male"> M
+                        <input type="radio" name="gendre" value="female"> Ж
+                    </div>
+                    <div>
+                        <input type="submit" id="submit" value="Войти">
+                        <input type="reset" value="Очистить">
+                    </div>
+                    <div>
+                        <label>
+                        <span>Дополнительные возможности:</span>
+                        <input type="checkbox" name="extra" value="Adaptive"> Адаптивность
+                        <input type="checkbox" name="extra" value="Hosting" checked> Устаносвка на хостинг
+                        <input type="checkbox" name="extra" value="support"> Дальнейшая поддержка
+                        <input type="checkbox" name="extra" value="admin"> Установка админ-панели
+                    </label>
+                    </div>
+                    <div>
+                        <label>
+                    <span>Тип сайта</span>
+                    <select name="type" multiple>
+                        <option value="eshop">Интернет-магазин</option>
+                        <option value="landing">Лэндинг</option>
+                        <option value="card">Сайт-визитка</option>
+                    </select>
+                </label>
+                    </div>
+                    <div>
+                        <label>
+                    <span>Приложите экскиз</span>
+                    <input type="file" name="file">
+                </label>
+                    </div>
+                    <div>
+                        <label>
+                    <span>Ваш коментарий:</span>
+                    <textarea name="comment" cols="30" rows="10" maxlength="100"></textarea>
+                </label>
+                    </div>
+                    <input type="hidden" name="time" value="time_count">
+                    <!--Скрытый режим(с помощью JS считает сколько челевек был на сайте-->
+                    <div>
+                        <input type="reset" value="Сброс">
+                        <!--Как бы одно и тоже-->
+                        <button name="submit">Отправить</button>
+                        <!--Как бы одно и тоже-->
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div>Это мой сайт, пожалуйста не копируйте его.</div>
+    </footer>
+</body>
+
+</html>

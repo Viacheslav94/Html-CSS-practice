@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Рецепт домашнего печенья</title>
+    <meta charset="utf8">
+    <style>
+        body {
+            background-position: center;
+        }
+        
+        .list-notebook {
+            width: 200px;
+            margin: 0 auto;
+        }
+        
+        .q {
+            color: red;
+        }
+    </style>
+</head>
+
+<body background="fon.jpg" align="center">
+    <a href="#">Главная</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#gogogo">Перейти к рецепту</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="page2.html">Страница 2</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="page3.html">Страница 3</a>
+    <hr>
+
+    <h1 id="gogogo1">Таблицы</h1>
+    <!--Border(толщена рамки), align(выравнивание), width(размер таблицы), cellspacing(растояние между ячейками)
+    старый способ оформления таблиц-->
+    <table border="2" align="center" width="80%" cellspacing="0">
+        <tr>
+            <th>Столбец</th>
+            <th>Столбец</th>
+            <th>Столбец</th>
+        </tr>
+        <tr>
+            <td>Ячейка</td>
+            <td>Ячейка</td>
+            <td>Ячейка</td>
+        </tr>
+        <tr align="center">
+            <td rowspan="3">
+                <!--Вставляем таблицу в таблицу-->
+                <table border="10" align="center" width="100%" cellspacing="0">
+                    <tr>
+                        <th>Столбец</th>
+                        <th>Столбец</th>
+                        <th>Столбец</th>
+                    </tr>
+                    <tr>
+                        <td>Ячейка</td>
+                        <td>Ячейка</td>
+                        <td>Ячейка</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка</td>
+                        <td>Ячейка</td>
+                        <td>Ячейка</td>
+                    </tr>
+                </table>
+            </td>
+            <td>Эта та строчка в которую вставлена таблица</td>
+            <td>Эта та строчка в которую вставлена таблица</td>
+        </tr>
+        <tr>
+            <td>Ячейка</td>
+            <td>Ячейка</td>
+        </tr>
+        <tr>
+            <td>Ячейка</td>
+            <td>Ячейка</td>
+        </tr>
+    </table>
+
+    <h1>Какой-то заголовок</h1>
+    <p>Какой-то текст</p>
+    <p><big>Шелта-болтай</big><br> Сидел на стене.<br> <small>Шелтай-болтай</small><br> Свалился со стены</p>
+
+    <h2>Нумерованый список</h2>
+    <ol type="I" start="2" class="list-notebook">
+        <li>Первый пункт</li>
+        <li>Второй пункт</li>
+        <li>Третий пункт</li>
+        <li>Четвертый пункт</li>
+        <li>Пятый пункт</li>
+    </ol>
+
+    <h2>Список определений</h2>
+    <dl>
+        <dt>Первый пункт</dt>
+        <dd>Определение один</dd>
+        <dd>Определение два</dd>
+        <dt>Второй пункт</dt>
+        <dd>Определение два</dd>
+        <dt>Третий пункт</dt>
+        <dd>Определение три</dd>
+        <dt>Четвертый пункт</dt>
+        <dd>Определение четыри</dd>
+        <dt>Пятый пункт</dt>
+        <dd>Определение пять</dd>
+    </dl>
+
+    <h1 class="q">Быстрый рецепт домашнего печенья</h1>
+    <img src="pe4en'ka.jpg" alt="Рецепт печенья">
+    <p class="q">Что делать если захотелось сладенького к чаю, в этом нам поможет рецепт домашнего печенья.</p>
+    <p id="gogogo" class="red">Ингредиенты:</p>
+
+    <ul class="list-notebook" type="square">
+        <li>2 больших старых банана</li>
+        <li>стакан геркулеса</li>
+        <li>орехи</li>
+        <li>изюм</li>
+        <li>шоколад</li>
+        <li>корица (пожеланию)</li>
+    </ul>
+    <hr>
+
+
+    <h3>Приготовление домашнего печенья</h3>
+    <p>Для начала нужно хорошенько размять подготовленные и очищенные бананы с овсянкой, а после чего перемешать.</p>
+    <p>Готовить при температуре 350 <sup>0</sup> C, предварительно смазав лист для выпечки маслом, 15 минут.</p>
+    <hr>
+    <a href="#">Главная</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#gogogo1">В начало</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="page2.html">Страница 2</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="page3.html">Страница 3</a>
+
+</body>
+
+</html>

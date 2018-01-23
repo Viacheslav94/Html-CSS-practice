@@ -1,0 +1,285 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Наша первая страница</title>
+    <meta charset="utf8">
+    <link rel="shotcut icon" href="favicon.ico" type="images/x-icon">
+</head>
+
+<!--Здесь начитается тело сайта-->
+
+<body>
+
+    <h1>Дневник по HYML</h1>
+    <h2>Примеры по практике</h2>
+    <hr>
+    <a href="index.html">Главная</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Страница 2</a>
+    <hr>
+
+    <h3>Формы на сайте</h3>
+    <style>
+        form {
+            width: 500px;
+            margin: 20px auto;
+            font-family: sans-serif;
+            font-size: 15px;
+        }
+        
+        fieldset {
+            border: 3px double #ccc;
+            border-radius: 3px;
+            margin: 20px 0;
+            padding: 20px;
+            background: rgb(192, 192, 192);
+        }
+        
+        legend {
+            background: rgb(251, 255, 0);
+            border-radius: 3px;
+            padding: 5px 10px;
+            color: rgb(253, 1, 1)
+        }
+        
+        label {
+            width: 150px;
+            display: inline-block;
+            cursor: pointer;
+            color: rgb(25, 0, 255)
+        }
+    </style>
+    <form action="#" name="MyForm">
+        <fieldset title="Вводите правильно">
+            <!--Начало руппы, title(всплывающая подсказка)-->
+            <legend>Контактные данный</legend>
+            <!--Название группы-->
+            <p>
+                <label for="name">Укажите имя: </label>
+                <input id="name" type="text" placeholder="Ваше имя?" maxlength="13" required autofocus>
+                <!--Окно для ввода, placeholder(подсказка которая исчезает), maxlength(максимальное количество символов)-->
+            </p>
+            <p>
+                <label for="mail">Укажите e-mail: </label>
+                <input id="mail" type="email" placeholder="Ваш e-mail?" required>
+            </p>
+            <p>
+                <label for="phone">Телефон: </label>
+                <input id="phone" pattern="\+\d{3}\s\d{2}\s\d{3}\s\d{2}\s\d{2}" type="tel" placeholder="+380 63 555 44 33">
+            </p>
+            <p>
+                <label for="web">Укажите сайт: </label>
+                <input id="web" type="url" placeholder="Ваш сайт? Если есть">
+            </p>
+            <p>
+                <label for="city">Укажите город:</label>
+                <select name="city">
+            <optgroup label="Деревни" disabled>
+                <option value="city9">Рахов</option>
+                <option value="city10">Шмель</option>
+                <option value="city11">Маслово</option>
+            </optgroup>
+            <optgroup label="Украина">
+                <option value="city1">Киев</option>
+                <option value="city2">Харьков</option>
+                <option value="city3">Львов</option>
+                <option value="city4">Луцк</option>
+                <option value="city5">Одесса</option>
+            </optgroup>
+            <optgroup label="Россия">
+                <option value="city6">Москва</option>
+                <option value="city7">Питер</option>
+                <option value="city8">Красноярск</option>
+            </optgroup>
+        </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Личные данные</legend>
+            <p>
+                <label for="col">Укажите цвет глаз: </label>
+                <input id="col" type="color" value="#d80000">
+            </p>
+            <p>
+                <label for="num">Ваш вес (кг): </label>
+                <input id="num" type="number" value="35" min="35" max="200" step="5">
+            </p>
+            <p>
+                <label for="ran">Ваш рост (см): </label>
+                <input oninput="out.value=(ran.value); out2.value=(ran.value * 10)" id="ran" type="range" min="0" max="300">
+                <br></br>
+                <label>Ваш рост равен: </label>
+                <output id="out">100</output> Сантиметров
+                <br></br>
+                <label>или: </label>
+                <output id="out2">1000</output> Милиметров
+            </p>
+            <p>
+                <label for="pol">Укажите ваш пол: </label>
+                <input id="pol" type="radio" name="pol"> Мужской
+                <!--radio можно выбрать что то одно-->
+                <input type="radio" name="pol" checked> Женский
+            </p>
+            <p>
+                <label for="dr">Укажите ДР: </label>
+                <input id="dr" max="2017-01-16" value="2017-01-15" type="date" name="dr">
+                <!--value значение которое будет отображатся сразу-->
+            </p>
+            <p>
+                <label for="time">Укажите время: </label>
+                <input id="time" min="08:00" max="20:00" value="08:00" type="time" name="time">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Интересы</legend>
+            <p>
+                <label for="sub">Получать письма по: </label>
+                <input id="sub" type="checkbox" name="sub" checked> Все
+                <!--checkbox можно выбрать несколько-->
+                <input type="checkbox" name="sub"> Бизнесу
+                <input type="checkbox" name="sub"> Акциям
+                <input type="checkbox" name="sub"> Forex'y
+            </p>
+            <p>
+                <label for="pass">Укажите пароль: </label>
+                <input id="pass" type="password" placeholder="Введите пароль" maxlength="13">
+            </p>
+            <p>
+                <label for="text">Сообщение</label>
+                <textarea name="text" id="text" cols="30" rows="10" placeholder="Введите сообщение"></textarea>
+                <!--cols(ширина в символах), rows(высота в строках-->
+            </p>
+            <p>
+                <input type="submit" value="Отпаравить"> <input type="reset" value="Очистить">
+            </p>
+        </fieldset>
+    </form>
+
+    <h3>Основы таблиц</h3>
+
+    <style>
+        /*Оформление таблицы через CSS*/
+        
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+        
+        th {
+            border: 5px solid #ccc;
+            /*Толщена и цвет линий*/
+            padding: 5px 10px;
+            /*Отступ от текста*/
+        }
+        
+        td {
+            border: 1px solid #ccc;
+            /*Толщена и цвет линий*/
+            padding: 5px 10px;
+        }
+        
+        thead {
+            background: rgba(125, 72, 250, 0.938);
+            border: 5px solid #ccc;
+        }
+        
+        tfoot {
+            background: rgb(200, 250, 106);
+            border: 5px solid #ccc;
+        }
+    </style>
+
+    <table>
+        <!--Начало таблицы-->
+        <caption>Удивительные животные.</caption>
+        <!--Название таблицы (всегда в центре)-->
+        <colgroup>
+            <!--Начало оформленияя таблицы-->
+            <col style="width:150px; border: 5px solid #ccc;">
+            <!--Размеры таблицы и цвет(старый способ через html-->
+        </colgroup>
+        <colgroup style="border: 5px solid #ccc;">
+            <col style="width350">
+            <col style="width200">
+            <col style="width300">
+            <col style="width50">
+        </colgroup>
+        <colgroup>
+            <col style="width:150px; border: 5px solid #ccc;">
+        </colgroup>
+        <!--Конец оформленияя таблицы-->
+        <thead>
+            <!--Голова таблицы-->
+            <tr>
+                <!--Начало стороки-->
+                <th>Животные</th>
+                <!--Начало ячейки(только для головы)-->
+                <th>Описание</th>
+                <th>Окрас</th>
+                <th>Характер</th>
+                <th>Жизнь</th>
+                <th>Рекомендация</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <!--Конец таблицы(всегда отображается в конце, ДЕЛАТЬ ТОЛЬКО ТАК-->
+            <tr>
+                <th>Итого:</th>
+                <td rowspan=" 2 " colspan="4" style="text-align: right">Общая продолжительность жизни: 66 лет</td>
+                <!--rowspan(объединение ячеек по вертикали) colspan(объединение ячеек по горизонтали)-->
+                <td rowspan="2 ">ИЗБЕГАТЬ!!!</td>
+            </tr>
+            <tr>
+                <td>4 зверя</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <!--Средина таблицы-->
+            <tr>
+                <td>Краколев</td>
+                <!--Начало ячейки-->
+                <td>С одной стороны головальва, а с другой кракодила</td>
+                <td>Красно-рыже-зеленый</td>
+                <td>Злой. Так как в туолет сходить нет возможности</td>
+                <td>1 год</td>
+                <td rowspan="3 ">Держать подальше от людей</td>
+            </tr>
+            <tr>
+                <td>Пчеловек</td>
+                <td>Бородатый, с усиками и синим жалом</td>
+                <td>Полосатый, желто-черный</td>
+                <td>Громкий. Постоянно жужжит.</td>
+                <td rowspan="2 ">30 лет</td>
+            </tr>
+            <tr>
+                <td>Попугат</td>
+                <td>Гордый птыц, с завышеной самооценкой! Считайет что у него клюв как у орла</td>
+                <td>Пестрый, серо-буро-малиновый</td>
+                <td>Вредный. По ночам просит кефир, матерится</td>
+            </tr>
+            <tr>
+                <td>Хомякоид</td>
+                <td>Хомяк-андроид. Пушистый с железными вставками</td>
+                <td colspan="2 ">На выбор покупателя</td>
+                <td>5 лет</td>
+                <td>Не мочить может бабахнуть</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <hr>
+    <p>2018 &copy; Viacheslav Kryvoviaz</p>
+
+</body>
+
+</html>
+
+
+<!--
+
+<tag atr1="zn1 zn2 zn3 ">
+
+<tag atr1 atr2="zn1 zn2 ... " ...></tag>
+
+-->

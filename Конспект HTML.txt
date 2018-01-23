@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+ <!--head Голова сайта-->
+        <meta charset="utf-8"> <!--Кодировка сайта-->
+        <title>Вёрстка для не-технарей</title> <!--Название вкладки в браузере-->
+        <meta name="keywords" content="вёрстка, компьютерная грамотность, программирование"> <!--Ключевые слова для поиска-->
+        <link rel="shotcut icon" href="favicon.ico" type="images/x-icon"> <!--Иконка сайта в браузере-->
+	<meta name="description" content="Примеры того, что изучение веб-технологий может быть полезно для всех"> <!--Краткое описание сайта в поиске-->
+	<link rel="stylesheet" href="/assets/course2/final.css"> <!--Подключение внешних стилей с CSS-->
+    </head>
+    <body style="background-color: rgb(255, 187, 0)"> <!--Цвет фона страницы-->
+	<!--Тело сайта-->
+    <h1 id="gogogo">Дневник по HYML</h1> <!--#gogogo id для Гиперсылки-->
+    <h2>Примеры по практике</h2>
+    <hr>
+    <a href="#">Главная</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="page2.html">Страница 2</a> <!--Переход на следующую страницу нашего сайта (# это просто обновит сайт)-->
+    <hr>
+
+    <h3>Базовое оформление текста на странице</h3>
+
+    <p>Теги &lt;h1&gt; - &lt;h6&gt; - отвечают за оформление и вывод заголовка с 1 по 6 уровни.</p>
+
+    <p>Теги &lt;p&gt; - оформляем текс в абзаце.</p>
+
+    <p>Теги <b>&lt;b&gt;</b> - <strong>&lt;strong&gt;</strong> - делает текс жирным </p>
+
+    <p>Теги <i>&lt;h1&gt;</i> - <em>&lt;em&gt;</em> - делает текст курсивом.</p>
+
+    <p>Теги <s>&lt;h1&gt;</s> - <s>&lt;s&gt;</s> - делает текст зачеркнутым.</p>
+
+    <p>Теги <u>&lt;h1&gt;</u> - <u>&lt;u&gt;</u> - делает текст подчеркнутым.</p>
+
+    <p>Теги &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;strong&gt;, &lt;em&gt; - важны для поисковых систем. Используются для оптимизации страниц сайта под поисковые запросы. <b>Применять с умом!!!</b></b>
+
+        <h3>Типы списков в HTML</h3>
+
+        <p><b>Числовой список:</b></p>
+        <ol reversed>
+            <li>Первый пункт</li>
+            <li>Второй пункт</li>
+            <li>Третий пункт</li>
+            <li type="A">Четвертый пункт</li>
+            <li>Пятый пункт</li>
+            <li>Шестой пункт</li>
+            <li>Седьмой пункт</li>
+        </ol>
+
+        <p><b>Маркерованый список:</b></p>
+        <ul type="circle">
+            <li>Первый пункт</li>
+            <li>Второй пункт</li>
+            <li>Третий пункт</li>
+            <li>Четвертый пункт</li>
+            <li>Пятый пункт</li>
+            <li>Шестой пункт</li>
+            <li>Седьмой пункт</li>
+        </ul>
+
+        <p><b>Список определений:</b></p>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Язык разметки на котором строятся страницы в интернете</dd>
+            <dt>CSS</dt>
+            <dd>Каскадные таблицы, которые используются для оформления</dd>
+        </dl>
+
+        <h3 title="Заголовок третьего уровня">Подключение картинок на сайте:</h3>
+        <a href="images/logo.png" target="_blank" title="Блог Сереги"> <!--target(открывает сылку в новом окне)-->
+            <img src="images/logo.png" alt="Логотип" title="Логотип"> <!--Вставить картинку-->
+            <p><b>Перейдите на сайт</b></p>
+        </a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32.021" height="32.008" viewBox="0.005 -0.004 32.021 32.008" enable-background="new 0.005 -0.004 32.021 32.008"><path fill="#324D5B" d="M7.565 23.525c-.055-.198-4.457-2.132-4.613-2.288-.016-.016-1.244-.482-1.713-.014-.471.469-.025 1.674.013 1.712.161.161 2.528 4.138 2.733 4.19.4.104.84.001 1.15-.309.315-.313 2.542-2.885 2.43-3.291zm3.221 5.542c-.156-.157-2.092-4.557-2.29-4.611-.405-.111-2.979 2.113-3.294 2.428-.311.31-.412.75-.309 1.15.053.205 4.031 2.57 4.193 2.731.037.038 1.243.482 1.713.013.469-.468.003-1.696-.013-1.711z"/><path fill="#D1D5D7" d="M17.264 11.453c-.08-.164-14.127-10.823-14.263-10.959-.675-.675-1.782-.662-2.471.027s-.702 1.796-.027 2.471c.143.143 10.795 14.206 10.967 14.287.647.306 3.182-1.547 3.727-2.092.55-.55 2.386-3.083 2.067-3.734zm14.264 17.55c-.137-.136-10.791-14.187-10.955-14.268-.65-.317-3.189 1.524-3.74 2.075-.547.546-2.404 3.085-2.1 3.732.082.173 14.149 10.821 14.291 10.964.676.675 1.783.661 2.475-.03.691-.69.704-1.798.029-2.473z"/><g fill="#324D5B"><path d="M18.774 16.371l12.142 15.498c.211-.088.41-.219.583-.392.691-.69.704-1.799.029-2.474-.102-.101-6.028-7.908-9.121-11.929l-1.371-1.702-2.262.999zM15.907 13.503l.997-2.262-2.539-2.055c-4.141-3.181-11.267-8.595-11.364-8.692-.3-.3-.686-.456-1.082-.485h-.266c-.407.032-.809.198-1.123.512-.171.172-.3.369-.388.579l15.765 12.403z"/></g><path fill="#2F4856" d="M10.8 30.778c.469-.469.002-1.696-.014-1.711-.149-.15-1.918-4.161-2.249-4.569l-3.511 3.511.504.504c1.143.757 3.435 2.132 3.557 2.253.037.038 1.243.482 1.713.012z"/><path fill="#DEE3E6" d="M28.229 3.792c1.696 1.698.447 5.7-1.207 7.356-1.654 1.656-23.193 20.466-24.888 18.768-1.696-1.697 17.093-23.259 18.748-24.915 1.654-1.655 5.652-2.906 7.347-1.209z"/><path fill="#E2574C" d="M19.639 12.382c.652.653.454 1.91-.443 2.808-.898.898-2.155 1.097-2.809.443-.652-.653-.453-1.909.443-2.808.899-.897 2.156-1.096 2.809-.443z"/><path fill="#324D5B" d="M28.229 3.792c-1.329-1.331-4.07-.846-5.991.222l.175.004c1.101.631 2.14 1.414 3.082 2.356.941.941 1.725 1.981 2.355 3.082l.125.395c1.091-1.926 1.598-4.714.254-6.059z"/></svg> <!--Адрес картинки (width и height размер картинки)-->
+
+        <h3>Ссылка на сайте</h3>
+        <a href="http://master-css.com" title="Блог Сереги">Перейти на влог Сереги</a><!--Переход на другой сайт или вкладку(в этом же окне)-->
+        <a href="#gogogo">Топай выше!</a> <!--Гиперсылка-->
+
+
+        <hr>
+        <p>2018 &copy; Viacheslav Kryvoviaz</p>
+	<script src="/assets/course2/final.js"></script> <!--подключение скриптов-->
+    </body>
+</html>
+
+
+
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Наша первая страница</title>
+    <meta charset="utf8">
+    <link rel="shotcut icon" href="favicon.ico" type="images/x-icon">
+</head>
+
+<!--Здесь начитается тело сайта-->
+
+<body>
+
+    <h1>Дневник по HYML</h1>
+    <h2>Примеры по практике</h2>
+    <hr>
+    <a href="index.html">Главная</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Страница 2</a>
+    <hr>
+
+    <h3>Формы на сайте</h3>
+    <style>
+        form {
+            width: 500px;
+            margin: 20px auto;
+            font-family: sans-serif;
+            font-size: 15px;
+        }
+        
+        fieldset {
+            border: 3px double #ccc;
+            border-radius: 3px;
+            margin: 20px 0;
+            padding: 20px;
+            background: rgb(192, 192, 192);
+        }
+        
+        legend {
+            background: rgb(251, 255, 0);
+            border-radius: 3px;
+            padding: 5px 10px;
+            color: rgb(253, 1, 1)
+        }
+        
+        label {
+            width: 150px;
+            display: inline-block;
+            cursor: pointer;
+            color: rgb(25, 0, 255)
+        }
+    </style>
+    <form action="#" name="MyForm">
+        <fieldset title="Вводите правильно"> <!--Начало группы, title(всплывающая подсказка)-->
+            <legend>Контактные данный</legend> <!--Название группы-->
+            <p>
+                <label for="name">Укажите имя: </label> 
+                <input id="name" type="text" placeholder="Ваше имя?" maxlength="13" required autofocus> <!--Окно для ввода, placeholder(подсказка которая исчезает), maxlength(максимальное количество символов)-->
+            </p>
+            <p>
+                <label for="mail">Укажите e-mail: </label>
+                <input id="mail" type="email" placeholder="Ваш e-mail?" required>
+            </p>
+            <p>
+                <label for="phone">Телефон: </label>
+                <input id="phone" pattern="\+\d{3}\s\d{2}\s\d{3}\s\d{2}\s\d{2}" type="tel" placeholder="+380 63 555 44 33">
+            </p>
+            <p>
+                <label for="web">Укажите сайт: </label>
+                <input id="web" type="url" placeholder="Ваш сайт? Если есть">
+            </p>
+            <p>
+                <label for="city">Укажите город:</label>
+                <select name="city">
+            <optgroup label="Деревни" disabled>
+                <option value="city9">Рахов</option>
+                <option value="city10">Шмель</option>
+                <option value="city11">Маслово</option>
+            </optgroup>
+            <optgroup label="Украина">
+                <option value="city1">Киев</option>
+                <option value="city2">Харьков</option>
+                <option value="city3">Львов</option>
+                <option value="city4">Луцк</option>
+                <option value="city5">Одесса</option>
+            </optgroup>
+            <optgroup label="Россия">
+                <option value="city6">Москва</option>
+                <option value="city7">Питер</option>
+                <option value="city8">Красноярск</option>
+            </optgroup>
+        </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Личные данные</legend>
+            <p>
+                <label for="col">Укажите цвет глаз: </label>
+                <input id="col" type="color" value="#d80000">
+            </p>
+            <p>
+                <label for="num">Ваш вес (кг): </label>
+                <input id="num" type="number" value="35" min="35" max="200" step="5">
+            </p>
+            <p>
+                <label for="ran">Ваш рост (см): </label>
+                <input oninput="out.value=(ran.value); out2.value=(ran.value * 10)" id="ran" type="range" min="0" max="300">
+                <br></br>
+                <label>Ваш рост равен: </label>
+                <output id="out">100</output> Сантиметров
+                <br></br>
+                <label>или: </label>
+                <output id="out2">1000</output> Милиметров
+            </p>
+            <p>
+                <label for="pol">Укажите ваш пол: </label>
+                <input id="pol" type="radio" name="pol"> Мужской <!--radio можно выбрать что то одно-->
+                <input type="radio" name="pol" checked> Женский
+            </p>
+            <p>
+                <label for="dr">Укажите ДР: </label>
+                <input id="dr" max="2017-01-16" value="2017-01-15" type="date" name="dr"> <!--value значение которое будет отображатся сразу-->
+            </p>
+            <p>
+                <label for="time">Укажите время: </label>
+                <input id="time" min="08:00" max="20:00" value="08:00" type="time" name="time">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Интересы</legend>
+            <p>
+                <label for="sub">Получать письма по: </label>
+                <input id="sub" type="checkbox" name="sub" checked> Все <!--checkbox можно выбрать несколько-->
+                <input type="checkbox" name="sub"> Бизнесу
+                <input type="checkbox" name="sub"> Акциям
+                <input type="checkbox" name="sub"> Forex'y
+            </p>
+            <p>
+                <label for="pass">Укажите пароль: </label>
+                <input id="pass" type="password" placeholder="Введите пароль" maxlength="13">
+            </p>
+            <p>
+                <label for="text">Сообщение</label>
+                <textarea name="text" id="text" cols="30" rows="10" placeholder="Введите сообщение"></textarea> <!--cols(ширина в символах), rows(высота в строках-->
+            </p>
+            <p>
+                <input type="submit" value="Отпаравить"> <input type="reset" value="Очистить">
+            </p>
+        </fieldset>
+    </form>
+
+    <h3>Основы таблиц</h3>
+
+    <style> /*Оформление таблицы через CSS*/
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+        
+        th {
+            border: 5px solid #ccc; /*Толщена и цвет линий*/
+            padding: 5px 10px; /*Отступ от текста*/
+        }
+
+ 	td {
+            border: 1px solid #ccc;
+            /*Толщена и цвет линий*/
+            padding: 5px 10px;
+        
+        thead {
+            background: rgba(125, 72, 250, 0.938);
+            border: 5px solid #ccc;
+        }
+        
+        tfoot {
+            background: rgb(200, 250, 106);
+            border: 5px solid #ccc;
+        }
+    </style>
+
+    <table> <!--Начало таблицы-->
+        <caption>Удивительные животные.</caption> <!--Название таблицы (всегда в центре)-->
+        <colgroup> <!--Начало оформленияя таблицы-->
+            <col style="width:150px; border: 5px solid #ccc;"> <!--Размеры таблицы и цвет(старый способ через html-->
+        </colgroup>
+        <colgroup style="border: 5px solid #ccc;">
+            <col style="width350">
+            <col style="width200">
+            <col style="width300">
+            <col style="width50">
+        </colgroup>
+        <colgroup>
+            <col style="width:150px; border: 5px solid #ccc;">
+        </colgroup> <!--Конец оформленияя таблицы-->
+        <thead> <!--Голова таблицы-->
+            <tr> <!--Начало стороки-->
+                <th>Животные</th> <!--Начало ячейки(только для головы)-->
+                <th>Описание</th>
+                <th>Окрас</th>
+                <th>Характер</th>
+                <th>Жизнь</th>
+                <th>Рекомендация</th>
+            </tr>
+        </thead>
+        <tfoot> <!--Конец таблицы(всегда отображается в конце, ДЕЛАТЬ ТОЛЬКО ТАК-->
+            <tr>
+                <th>Итого:</th>
+                <td rowspan=" 2 " colspan="4" style="text-align: right">Общая продолжительность жизни: 66 лет</td> <!--rowspan(объединение ячеек по вертикали) colspan(объединение ячеек по горизонтали)-->
+                <td rowspan="2 ">ИЗБЕГАТЬ!!!</td>
+            </tr>
+            <tr>
+                <td>4 зверя</td>
+            </tr>
+        </tfoot>
+        <tbody> <!--Средина таблицы-->
+            <tr>
+                <td>Краколев</td> <!--Начало ячейки-->
+                <td>С одной стороны головальва, а с другой кракодила</td>
+                <td>Красно-рыже-зеленый</td>
+                <td>Злой. Так как в туолет сходить нет возможности</td>
+                <td>1 год</td>
+                <td rowspan="3 ">Держать подальше от людей</td>
+            </tr>
+            <tr>
+                <td>Пчеловек</td>
+                <td>Бородатый, с усиками и синим жалом</td>
+                <td>Полосатый, желто-черный</td>
+                <td>Громкий. Постоянно жужжит.</td>
+                <td rowspan="2 ">30 лет</td>
+            </tr>
+            <tr>
+                <td>Попугат</td>
+                <td>Гордый птыц, с завышеной самооценкой! Считайет что у него клюв как у орла</td>
+                <td>Пестрый, серо-буро-малиновый</td>
+                <td>Вредный. По ночам просит кефир, матерится</td>
+            </tr>
+            <tr>
+                <td>Хомякоид</td>
+                <td>Хомяк-андроид. Пушистый с железными вставками</td>
+                <td colspan="2 ">На выбор покупателя</td>
+                <td>5 лет</td>
+                <td>Не мочить может бабахнуть</td>
+            </tr>
+        </tbody>
+    </table>
+
+<h1>Таблицы</h1>
+    <!--Border(толщена рамки), align(выравнивание), width(размер таблицы), cellspacing(растояние между ячейками)
+    старый способ оформления таблиц-->
+    <table border="2" align="center" width="80%" cellspacing="0">
+        <tr>
+            <th>Столбец</th>
+            <th>Столбец</th>
+            <th>Столбец</th>
+        </tr>
+        <tr>
+            <td>Ячейка</td>
+            <td>Ячейка</td>
+            <td>Ячейка</td>
+        </tr>
+        <tr align="center">
+            <td rowspan="3">
+                <!--Вставляем таблицу в таблицу-->
+                <table border="10" align="center" width="100%" cellspacing="0">
+                    <tr>
+                        <th>Столбец</th>
+                        <th>Столбец</th>
+                        <th>Столбец</th>
+                    </tr>
+                    <tr>
+                        <td>Ячейка</td>
+                        <td>Ячейка</td>
+                        <td>Ячейка</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка</td>
+                        <td>Ячейка</td>
+                        <td>Ячейка</td>
+                    </tr>
+                </table>
+            </td>
+            <td>Эта та строчка в которую вставлена таблица</td>
+            <td>Эта та строчка в которую вставлена таблица</td>
+        </tr>
+        <tr>
+            <td>Ячейка</td>
+            <td>Ячейка</td>
+        </tr>
+        <tr>
+            <td>Ячейка</td>
+            <td>Ячейка</td>
+        </tr>
+    </table>
+
+    <hr>
+    <p>2018 &copy; Viacheslav Kryvoviaz</p>
+
+</body>
+
+</html>
+
+
+<!doctype html>  <!--Самое правильное оформление сайта-->
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Мое портфолио</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body bgcolor="#cfcfcf">
+    <header>
+        <h1 align="center">Мой сайт портфолио</h1>
+        <address>
+        <div>Город: Киев</div>
+        <div>Телефон: 063 755 18 47</div>
+    </address>
+    </header>
+    <hr color="red">
+
+    <main>
+        <div class="left-col">
+            <aside>
+                <form action="Указать сервер.php" method="post">
+                    <input type="text" name="name" id="name" placeholder="Введите имя">
+                    <input type="password" name="pswrd" id="pswrd" placeholder="Введите пароль">
+                    <input type="submit" id="submit" value="Войти">
+                    <input type="reset" value="Очистить">
+                </form>
+                <div>
+                    <h2 class="section-title">Мои контакты</h2>
+
+                    <div>
+                        <h3>Я в соц. сетях</h3>
+                        <ul>
+                            <li><a href="https://vk.com/jlyhatik" target="_blank" title="Перейти на мою страничку в ВК">Я в ВК</a></li>
+                            <li><a href="#">Я в FB</a></li>
+                            <li><a href="#">Я в TW</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>.....</div>
+                <div>.....</div>
+                <div>.....</div>
+            </aside>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#">Портфолио</a>
+                    </li>
+                    <li>
+                        <a href="#">Блог</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right-col">
+            <section>
+                <h2 class="section-title">Обо мне</h2>
+                <div>
+                    <figure>
+                        <!--figure это групирование-->
+                        <img id="my-ava" src="https://www.cats.org.uk/uploads/images/featurebox_sidebar_kids/grief-and-loss.jpg" width="200" height="200" alt="Мой аватар" title="Кривовяз Вячеслав" border="2">
+                        <figcaption>
+                            <!--figcaption это подпись к фото-->
+                            Мое фото
+                        </figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <h3>Моя биография</h3>
+                    <article>
+                        <p>Биография — описание жизни человека, сделанное другими людьми или им самим (автобиография). Биография является источником первичной социологической информации, позволяющей определить психологический тип личности в его исторической,
+                            национальной и социальной обусловленности. Биография воссоздаёт историю человека в связи с общественной действительностью, культурой и бытом его эпохи. Биография может быть научной, художественной, популярной и т. д.</p>
+                        <p>Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так счастлив, мой друг, так упоен ощущением
+                            покоя, что искусство мое страдает от этого. Ни одного штриха не мог бы я сделать, а никогда не был таким большим художником, как в эти минуты. Когда от милой моей долины поднимается пар и полдневное солнце стоит над непроницаемой
+                            чащей темного леса и лишь редкий луч проскальзывает в его святая святых, а я лежу в высокой траве у быстрого ручья и, прильнув</p>
+                    </article>
+                </div>
+            </section>
+            <section>
+                <h2 class="section-title">Моя таблица</h2>
+                <table border="1" cellpadding="10" cellspacing="1">
+                    <tr bgcolor="#cacaca">
+                        <th>Вид проекта</th>
+                        <th>Сделано</th>
+                        <th>выкуплено</th>
+                    </tr>
+                    <tr>
+                        <td>Статичных</td>
+                        <td data-max="100">86</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>Адаптивных</td>
+                        <td>40</td>
+                        <td>30</td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <h2 class="section-title">Заказать у меня сайт</h2>
+                <form action="order.php" method="post">
+                    <div>
+                        <label for="client_name">Имя клиента</label>
+                        <input type="text" id="client_name" name="client_name" placeholder="Введите имя">
+                    </div>
+                    <div>
+                        <label for="email">Email клиента</label>
+                        <input type="text" id="email" name="email" placeholder="Введите email">
+                    </div>
+                    <div>
+                        <label for="pol">Ваш пол</label>
+                        <input type="radio" id="pol" name="gendre" value="male"> M
+                        <input type="radio" name="gendre" value="female"> Ж
+                    </div>
+                    <div>
+                        <input type="submit" id="submit" value="Войти">
+                        <input type="reset" value="Очистить">
+                    </div>
+                    <div>
+                        <label>
+                        <span>Дополнительные возможности:</span>
+                        <input type="checkbox" name="extra" value="Adaptive"> Адаптивность
+                        <input type="checkbox" name="extra" value="Hosting" checked> Устаносвка на хостинг
+                        <input type="checkbox" name="extra" value="support"> Дальнейшая поддержка
+                        <input type="checkbox" name="extra" value="admin"> Установка админ-панели
+                    </label>
+                    </div>
+                    <div>
+                        <label>
+                    <span>Тип сайта</span>
+                    <select name="type" multiple>
+                        <option value="eshop">Интернет-магазин</option>
+                        <option value="landing">Лэндинг</option>
+                        <option value="card">Сайт-визитка</option>
+                    </select>
+                </label>
+                    </div>
+                    <div>
+                        <label>
+                    <span>Приложите экскиз</span>
+                    <input type="file" name="file">
+                </label>
+                    </div>
+                    <div>
+                        <label>
+                    <span>Ваш коментарий:</span>
+                    <textarea name="comment" cols="30" rows="10" maxlength="100"></textarea>
+                </label>
+                    </div>
+                    <input type="hidden" name="time" value="time_count">
+                    <!--Скрытый режим(с помощью JS считает сколько челевек был на сайте-->
+                    <div>
+                        <input type="reset" value="Сброс">
+                        <!--Как бы одно и тоже-->
+                        <button name="submit">Отправить</button>
+                        <!--Как бы одно и тоже-->
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div>Это мой сайт, пожалуйста не копируйте его.</div>
+    </footer>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Новый сайт</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <h1>Мой новый сайт</h1>
+        </header>
+        <div class="content">
+            <h2>Подзаголовок контента</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+                pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate</p>
+        </div>
+        <aside>
+            <h2>Подзаголовок сайдбара</h2>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </aside>
+        <footer>
+            <p>Текс футера 2018</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

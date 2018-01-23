@@ -1,0 +1,33 @@
+.wrap {
+    width: 750px;
+    margin: 0 auto;
+}
+
+header {
+    background: green;
+}
+
+.content,
+aside {
+    height: 400px;
+    /*Длина ячеек*/
+}
+
+.content {
+    float: left;
+    /*Выравнивание*/
+    background: gray;
+    width: 80%;
+}
+
+aside {
+    float: left;
+    background: red;
+    width: 20%;
+}
+
+footer {
+    background: blue;
+    clear: both;
+    /*Очистить с обеих сторон*/
+}

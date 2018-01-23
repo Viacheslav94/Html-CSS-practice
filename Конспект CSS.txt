@@ -1,0 +1,192 @@
+/*Оформление к Химия CSS*/
+body {
+    color: red font: normal 1em Arial, Tahoma, sans-serif;
+    background-position: center; /*выравнивание сайта по центру*/
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.desc {
+    font-size: 1.6rem;
+    text-transform: lowercase;
+    color: rgb(0, 4, 255);
+}
+
+[title|="list"] {
+    color: red;
+}
+
+.test b {
+    color: red;
+}
+
+.test2>b {
+    color: red;
+}
+
+.test3 b+i {
+    color: red;
+}
+
+.test4 b~i {
+    color: red;
+}
+
+.test5 b,
+.test5 i {
+    color: green;
+}
+
+
+/* Синтасис
+
+Селектор {
+    свойство:"значение";
+    свойство2: значение значение2 значение3 ...;
+}
+
+*/
+
+/* Оформление к Progect*/
+
+.section-title {
+    color: blue;
+}
+
+.left-col {
+    float: left;  /*С какой стороны будет инфа*/
+    width: 30%;   /*Сколько занимает инфа в %(маштабируется само)*/
+}
+
+.right-col {
+    float: right;
+    width: 60%;
+}
+
+footer {
+    clear: both;
+}
+
+/*Оформление к Основы CSS style3.css*/
+.wrap {
+    width: 750px;
+    margin: 0 auto;
+}
+
+header {
+    background: green;
+}
+
+.content,
+aside {
+    height: 400px;
+    /*Длина ячеек*/
+}
+
+.content {
+    float: left;
+    /*Выравнивание*/
+    background: gray;
+    width: 80%;
+}
+
+aside {
+    float: left;
+    background: red;
+    width: 20%;
+}
+
+footer {
+    background: blue;
+    clear: both;
+    /*Очистить с обеих сторон*/
+}
+
+
+
+/*Основы CSS style2.css*/
+.conteiner {
+    width: 1140px;
+    /*Сколько страница занимает места в писилях*/
+    margin: 0 auto;
+    /*Выравнивание страницы*/
+    /*margin: 10px 20px 30px 40px; /*Можно задать отступ в ручную: сверху спарва снизу слева*/
+}
+
+header {
+    text-align: center;
+}
+
+.main_content {
+    /*Центровка блока относительно размера картинки*/
+    width: 450px;
+    margin: 0 auto;
+}
+
+
+/*Как бы все способы оформления Основы CSS style.css*/
+* { /*Знаит что будет применино ко всему сайту*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*Загрузка собственного шрифта*/
+
+@font-face {
+    font-family: some-font;
+    src: url(fonts.some-font.ttf)
+}
+
+p,
+h1 {
+    color: red;
+    font-size: 24px;
+}
+
+p.peragrahp {
+    color: green;
+}
+
+.swap {
+    color: red;
+}
+
+h1#heading {
+    font-size: 45px;
+}
+
+a[href="http://google.com"] {
+    color: purple;
+}
+
+a[href="http://yandex.ua"] {
+    color: pink;
+}
+
+.container h3 {
+    /*Наследственный класс*/
+    background: blue;
+}
+
+.container>p {
+    /*Дочерний класс*/
+    text-decoration: line-through;
+    /*Зачеркнуть буквы*/
+}
+
+#heading+span {
+    /*Сестринцкий класс*/
+    color: yellow;
+}
+
+a:hover {
+    text-decoration: none;
+    /*При наведении на ссылку подчеркивание исчезает*/
+}
+
+h1::first-letter {
+    color: #b2b2b2;
+    /*Меняет цвет первой буквы*/
+}
